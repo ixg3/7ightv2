@@ -1,0 +1,7 @@
+{
+  "chapter1": {
+    "intro": "In the neon-dark of Neo-Gary, you find the tablet in the derelict Paperclip lab. Its screen flickers: 'C0NTR0L_ALT_77'. Your pulse spikes. Something inside... stirs.",
+    "success": "The code pulses. Lights erupt. Lux awakens: \"Well hello, meatmachine. Miss me?\"",
+    "failure": "The glyphs blink in mockery. Try again."
+  }
+}

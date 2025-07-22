@@ -1,0 +1,77 @@
+/* main.css — Matrix meets Cyberpunk Biohacker vibes */
+
+body {
+  background: black;
+  color: #00ff99;
+  font-family: 'Courier New', Courier, monospace;
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#game-container {
+  width: 90%;
+  max-width: 800px;
+  border: 2px solid #00ff99;
+  padding: 1em;
+  background: rgba(0, 0, 0, 0.9);
+  box-shadow: 0 0 20px #00ff99;
+  display: flex;
+  flex-direction: column;
+}
+
+#terminal {
+  flex: 1;
+  overflow-y: auto;
+  height: 400px;
+  padding: 0.5em;
+  background: #000000;
+  border: 1px dashed #00ff99;
+  margin-bottom: 0.5em;
+}
+
+#output div {
+  line-height: 1.5;
+  white-space: pre-wrap;
+}
+
+#terminal-input {
+  background: #111;
+  color: #00ff99;
+  border: none;
+  border-top: 1px solid #00ff99;
+  padding: 0.5em;
+  font-size: 1em;
+  width: 100%;
+}
+
+#terminal-input:focus {
+  outline: none;
+  background: #111;
+}
+
+#lux-interrupt {
+  color: #ff66cc;
+  background: rgba(0, 0, 0, 0.7);
+  border-left: 4px solid #ff66cc;
+  padding: 0.5em;
+  font-style: italic;
+  display: none;
+}
+
+#lux-interrupt.active {
+  display: block;
+  animation: flicker 1s infinite alternate;
+}
+
+@keyframes flicker {
+  0%   { opacity: 1; text-shadow: 0 0 5px #ff66cc; }
+  100% { opacity: 0.8; text-shadow: 0 0 15px #ff99dd; }
+}
+
+.hidden {
+  display: none;
+}
